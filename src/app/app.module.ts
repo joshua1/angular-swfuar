@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductStore } from './store/product.store'
+import { ProductService } from './api-service/product.service'
 
 @NgModule({
   imports: [

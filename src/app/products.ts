@@ -13,9 +13,23 @@ export const products = [
     name: 'Phone Standard',
     price: 299,
     description: ''
+  },
+  {
+    name: 'Huaewei P9',
+    price: 450,
+    description: 'A Huawei Flagship Marvel'
+  },
+  {
+    name: 'Xiaomi X10',
+    price: 999,
+    description: 'IPhone Wanabe with amazing Camera'
+  },
+  {
+    name: 'Hulu Phone',
+    price: 299,
+    description: 'When Hulu Gets into phones'
   }
-];
-
+]
 
 /*
 Copyright Google LLC. All Rights Reserved.

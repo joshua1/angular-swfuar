@@ -29,7 +29,8 @@ export class ProductListComponent implements OnInit,OnDestroy{
   }
 
   public ngOnInit(): void {
-    this._productStore.getState()
+    this._productStore.loadStoreFromBackend() //fetching
+    this._productStore.getState()    //subscription
         .pipe(takeUntil(this.unsubscribe$))
         .subscribe(productsFromStore=>{
       this.products.length=0
@@ -37,7 +38,7 @@ export class ProductListComponent implements OnInit,OnDestroy{
     })
   }
 
-  public addProduct() {
+  public addProduct() { //adding to store
     let currentProductList = this._productStore.getStateSnapshot();
    const newProductList = [
       ...currentProductList,
